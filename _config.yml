@@ -1,127 +1,133 @@
 # Site
 repository: sproogen/resume-theme
 favicon: images/favicon.ico
-
-# Content configuration version
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Esteban Flores
+title: Mechanical Engineer — Robotics & Test
+email: flores.esteban2718@gmail.com
 
-# Dark Mode (true/false/never)
+# Appearance
 darkmode: false
 
-# Social links
-twitter_username: facespics
-github_username:  sproogen
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+# Social
+linkedin_username: esteban-flores27
 
 # About Section
-# about_title: About Me
-about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
-
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+about_profile_image: images/headshot.jpg
+about_content: | # this will include new lines
+  Mechanical engineer focused on **hands-on prototyping, test engineering, and first‑principles design**. 
+  I build, break, instrument, and iterate—then translate prototypes into production‑ready hardware and drawings.
+  
+  Recently: **CRAB Lab** robotic centipede autonomy & sensing; **GT Solar Racing** mechanical lead; and **composite materials testing**.
+  
+  **Why Anduril:** mission‑driven hardware, fast iteration, and real‑world impact. Strong fit for roles that
+  require **design→test→production ownership**, **high‑quality CAD & drawings**, and **shop‑floor execution**.
+  
+  **Logistics:** U.S. person; Atlanta‑onsite; ready for full‑time 2026 start.  
+  Interests: test engineering, robotics, reliability, field validation.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Targeted Highlights
+    layout: list
+    content:
+      - layout: left
+        title: Hardware, Test & First Principles
+        description: |
+          - Design→**prototype**→**analyze failures**→**productionize** workflows (DHF/ECN discipline).
+          - **First‑principles** stress, stiffness, dynamics; verify with calcs, FEA, and bench tests.
+          - **CAD & drawings** (GD&T; tolerances; materials; finish; stack‑ups; BOM ownership).
+          - **Shop skills:** 3D printing, laser/waterjet, sheet metal, basic machining & assembly.
+      - layout: left
+        title: Electrical Integration & Sensing
+        description: |
+          - Integrated **motors, controllers, IMUs, encoders, cameras, custom force sensors**.
+          - Data acquisition, test fixtures, and Python tooling for **sensor fusion & test automation**.
+      - layout: left
+        title: Field & Vendor Execution
+        description: |
+          - Build test plans, run instrumented tests, analyze results, and close out with corrective actions.
+          - Vendor bring‑up, DFM notes, drawing packs, and quick‑turn iterations.
+
+  - title: Projects
+    layout: list
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        title: Robotic Centipede — CRAB Lab (Georgia Tech)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Undergraduate researcher in design, sensing, and autonomy for multi‑legged, elongate robots
+        description: |
+          - Mechanical design & rapid prototyping of body/leg modules; additive, sheet metal, laser/waterjet.
+          - **Closed‑loop control** on Raspberry Pi; IMU, encoder & camera integration; Python/C++ control stack.
+          - **Custom contact sensors** (capacitance/force) and a 6‑axis arm test rig for drag‑force studies.
+          - Outcome: reliable lab platforms + data pipelines for gait experiments and planning research.
+          <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap">
+            <img src="/images/website_ziggy_pic.png" title="CRAB Lab Robot" style="max-width:48%;height:auto" />
+            <img src="/images/crablab_website_image2.png" title="Leg Module & Sensors" style="max-width:48%;height:auto" />
+          </div>
+      - layout: top-middle
+        title: Mechanical Lead — Georgia Tech Solar Racing
+        quote: >
+          Mechanical lead for a road‑worthy, multi‑occupant solar vehicle to race across the U.S.
+        description: |
+          - **Frame, aero, steering, suspension** design & integration; 1000s‑part SolidWorks assembly ownership.
+          - **First‑principles + FEA** (ANSYS/NX) with physical test rigs to validate/repair suspension failures.
+          - **Composite chassis** design; DFM with in‑house processes; drawing packs & vendor coordination.
+          <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap">
+            <img src="/images/solar_image_1.png" title="Vehicle CAD & Assembly" style="max-width:48%;height:auto" />
+            <img src="/images/solar_image_2.png" title="Aero & Chassis" style="max-width:48%;height:auto" />
+          </div>
+      - layout: top-middle
+        title: Composite Materials Characterization
+        quote: >
+          ASTM‑based test program for in‑house carbon sandwich panels and fiber layups
+        description: |
+          - Designed **compression, 4‑pt bend, tension, joint** tests; standardized prep & fixturing.
+          - Processed thousands of data points in MATLAB; produced **datasheet‑level properties** for design.
+          - Correlated **ANSYS Composite Pre/Post** with test results to set design factors of safety.
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Experience
+    layout: list
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+        title: Complex Rheology & Biomechanics (CRAB) Lab — Georgia Tech
+        sub_title: Undergraduate Researcher (Robotics)
+        caption: 2023 – 2025
+        description: |
+          Design & test for multi‑legged robot platforms; sensing & data acquisition; actuation integration; 
+          control software; fixture design; report‑out & design reviews.
+      - layout: left
+        title: Georgia Tech Solar Racing
+        sub_title: Mechanical Lead
+        caption: 2022 – 2024
+        description: |
+          Subsystem ownership (frame/aero/suspension/steering), drawing control, vendor interface, 
+          build/test/iterate, and reliability close‑outs.
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Education
+    layout: list
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: Georgia Institute of Technology
+        sub_title: B.S. Mechanical Engineering
+        caption: 2021 – 2024
+        description: |
+          Focus: mechanical design, structures, dynamics, manufacturing, and test; leadership in GT Solar; 
+          research in CRAB Lab.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-
-  - title: A Little More About Me
+  - title: About me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+    content: |
+      Outside the shop: cooking, biking, reading, beekeeping.
 
 # Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+footer_show_references: false
 
 # Build settings
 remote_theme: sproogen/resume-theme
-
 sass:
   sass_dir: _sass
   style: compressed
-
 plugins:
  - jekyll-seo-tag

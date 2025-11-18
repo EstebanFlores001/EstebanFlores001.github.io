@@ -6,14 +6,16 @@ author_profile: false
 
 <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Headshot" style="width:140px;border-radius:9999px;display:block;margin:0 auto 1rem;" />
 
-**Mechanical engineer focused on hands-on prototyping, test engineering, and first-principles design.**  
-I build, break, instrument, and iterate—then translate prototypes into production-ready hardware and drawings.
+**Robotics MS student with interest in autonomy and making human-done processes safer, faster, and more efficient.**  
+I am a MS student in Robotics, Systems, and Controls at ETH, a world leader in robotics research and autonomy. Due to my previous experience
+as a robotics intern and undergraduate degree from Georgia Tech, I have a keen interest in utliziing my experience in physical systems towards 
+simulation, planning, and sensing. I hope to bring novel ideas and the most recent literature towards industries requiring rapid advancement 
+such as agriculture, logistics, and defense. 
 
-Recently: **CRAB Lab** robotic centipede autonomy & sensing; **GT Solar Racing** mechanical lead; and **composite materials testing**.
 
-**Why Anduril:** mission-driven hardware, fast iteration, and real-world impact. Strong fit for roles that require **design→test→production ownership**, **high-quality CAD & drawings**, and **shop-floor execution**.
+Recently: **Ground Control Robotics Intern** robotic simulation, sensing, and autonomy; **GT CRAB Lab** Student researcher, 1st author, experimentation. 
 
-**Logistics:** U.S. person; Atlanta-onsite; ready for full-time 2026 start.  
+**Logistics:** U.S. Citizen; ready for full-time 2026 start.  
 Interests: test engineering, robotics, reliability, field validation.
 
 [Download CV (PDF)]({{ '/assets/Esteban_Flores_CV.pdf' | relative_url }}) ·

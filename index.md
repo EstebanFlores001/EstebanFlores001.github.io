@@ -1,79 +1,179 @@
 ---
-layout: single
+layout: splash
 title: "Esteban Flores"
 author_profile: false
 ---
-<!-- 
-<img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Headshot" style="width:140px;border-radius:9999px;display:block;margin:0 auto 1rem;" />
-<img src="{{ '/assets/images/image6.png' | relative_url }}" alt="Headshot" style="width:140px;border-radius:9999px;display:block;margin:0 auto 1rem;" />
-<img src="{{ '/assets/images/image8.jpg' | relative_url }}" alt="Headshot" style="width:140px;border-radius:9999px;display:block;margin:0 auto 1rem;" /> -->
-
-<div style="display:flex; justify-content:center; gap:1.5rem; margin:1rem 0;">
-  <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" 
-       alt="Headshot" 
-       style="width:140px; border-radius:9999px;" />
-
-  <img src="{{ '/assets/images/image6.png' | relative_url }}" 
-       alt="Image 6" 
-       style="width:140px; border-radius:9999px;" />
-
-  <img src="{{ '/assets/images/image8.jpg' | relative_url }}" 
-       alt="Image 8" 
-       style="width:140px; border-radius:9999px;" />
+<!-- ====== INTRO SECTION ====== -->
+<div style="display:flex; flex-wrap:wrap; gap:3rem; margin:2rem 0; align-items:flex-start;">
+  <!-- LEFT: 2-COLUMN IMAGE GRID -->
+  <div style="
+      display:grid;
+      grid-template-columns: 320px 0px;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 1rem;   /* <-- FIXED */
+      align-items:stretch;
+    ">
+    <!-- Headshot spans both rows of column 1 -->
+    <img src="{{ '/assets/images/headshot.jpg' | relative_url }}"
+         style="grid-row: 1 / span 2; width:100%; border-radius:8px; object-fit:cover;">
+    <!-- Top-right image (top-aligned) -->
+    <img src="{{ '/assets/images/image6.png' | relative_url }}"
+         style="width:100%; border-radius:8px; object-fit:cover;">
+    <!-- Bottom-right image (bottom-aligned) -->
+    <img src="{{ '/assets/images/image8.jpg' | relative_url }}"
+         style="width:100%; border-radius:8px; object-fit:cover;">
+  </div>
+  <!-- RIGHT COLUMN — TEXT -->
+  <div style="flex:1; min-width:300px;">
+    <h2 style="margin-top:0;">Robotics at ETH Zurich</h2>
+    <p>
+      Robotics MS student at ETH Zurich focused on autonomy, simulation, and 
+      sensing for safer and more efficient real-world systems.
+    </p>
+    <p>
+      Former Ground Control Robotics intern (simulation, sensing, autonomy) and 
+      GT CRAB Lab researcher (experimental locomotion, first author).
+    </p>
+    <p>
+      <strong>Logistics:</strong> U.S. Citizen · Full-time availability 2026<br>
+      <strong>Interests:</strong> robotics, validation, reliability, field testing
+    </p>
+  </div>
 </div>
-**Robotics MS student at ETH Zurich with interest in autonomy and making human-done processes safer, faster, and more efficient.**  
-I am a MS in Robotics, Systems, and Controls at ETH, a world leader in robotics research and autonomy. 
-Due to my previous experience
-as a robotics intern and undergraduate degree from Georgia Tech, I have a keen interest in utliziing my experience in physical systems towards 
-simulation, planning, and sensing. I hope to bring novel ideas and the most recent literature towards industries requiring rapid advancement 
-such as agriculture, logistics, and defense. 
+---
 
+## Undergarduate Research
+### Autonomy and Locomotion of multilegged-robots
+ <video controls style="width:90%; display:block; margin:1rem auto;">
+    <source src="{{ '/assets/videos/no_fall_recovery_web_cfr.mp4' | relative_url }}" type="video/mp4">
+  </video>
+<div class="feature__wrapper">
+<!-- CARD 1: Tactile Sensing -->
+<div class="feature__item" style="display:flex; flex-direction:column;">
+  <h3 class="feature__title">Tactile Sensing Locomotion</h3>
 
-Recently: **Ground Control Robotics Intern** robotic simulation, sensing, and autonomy; **GT CRAB Lab** Student researcher, 1st author, experimentation. 
+  <div style="flex:0 0 auto;">
+    <video controls style="width:100%; display:block; margin:0.5rem auto;">
+      <source src="{{ '/assets/videos/iros_antenna_sensing_2x_web.mp4' | relative_url }}" type="video/mp4">
+    </video>
+  </div>
 
-**Logistics:** U.S. Citizen; ready for full-time 2026 start.  
-Interests: test engineering, robotics, reliability, field validation.
+  <p style="margin-top:auto;">
+    Closed-loop locomotion using tactile antenna sensors to detect obstacles and modulate 
+    the robot’s gait in real time.
+  </p>
+</div>
 
-## Centipede Robot Research
+<!-- CARD 2: IMU Fall Recovery -->
+<div class="feature__item" style="display:flex; flex-direction:column;">
+  <h3 class="feature__title">Automatic Fall Recovery</h3>
 
-### Design and Control 
-<!-- <video controls style="width:100%; display:block; margin:0 auto;">
-  <source src="{{ '/assets/videos/no_fall_recovery_web_cfr.mp4' | relative_url }}" type="video/mp4">
-</video> -->
+  <div style="flex:0 0 auto;">
+    <video controls style="width:100%; display:block; margin:0.5rem auto;">
+      <source src="{{ '/assets/videos/fall_recovery_web.mp4' | relative_url }}" type="video/mp4">
+    </video>
+  </div>
 
-### Simulation
-<img 
-  src="{{ '/assets/images/IMG_7406.jpeg' | relative_url }}"
-  alt="Turning markers"
-  style="width:100%; display:block; margin:0 auto;">
+  <p style="margin-top:auto;">
+    Onboard IMU signals are used to detect unstable body configurations and trigger fall 
+    recovery maneuvers, improving robustness on rough terrain.
+  </p>
+</div>
 
-Assisted in creating a 5 segment MuJoCo robot model of a multilegged undulatory robot, including XML file definition, model tuning, and writing a python controller that implemented the current gait library from previous research. The purpose of the simulation is to test closed-loop control schemes and gait optimizations, ensuring a minimal sim to real gap through empirical validation. 
-### Autonomy 
-#### Tactile Sensing Based Autonomous Locomotion
+<!-- CARD 3: Simulation & Design -->
+<div class="feature__item" style="display:flex; flex-direction:column;">
+  <h3 class="feature__title">Simulation & Robot Design</h3>
+
+  <div style="flex:0 0 auto;">
+    <img 
+      src="{{ '/assets/images/IMG_7406.jpeg' | relative_url }}"
+      alt="MuJoCo simulation"
+      style="width:100%; display:block; margin:0.5rem auto;"
+    >
+  </div>
+
+  <p style="margin-top:auto;">
+    Built a 5-segment MuJoCo model of a multilegged undulatory robot, including XML model 
+    definition, tuning, and Python controllers that reproduce physical gaits for sim-to-real studies.
+  </p>
+
+  <!-- Optional placeholder video (sometimes buggy, left commented) -->
+  <!--
+  <video controls style="width:100%; display:block; margin:0.5rem auto;">
+    <source src="{{ '/assets/videos/no_fall_recovery_web_cfr.mp4' | relative_url }}" type="video/mp4">
+  </video>
+  -->
+</div>
+</div>
+<!-- # **Autonomy Experiments** -->
+
+<!-- ## **Tactile Sensing Based Locomotion**
+<div style="margin-bottom:2rem;">
 <video controls style="width:100%; display:block; margin:0 auto;">
   <source src="{{ '/assets/videos/iros_antenna_sensing_2x_web.mp4' | relative_url }}" type="video/mp4">
 </video>
-#### IMU-Based Fall Recovery
+</div>
+
+## **IMU-Based Fall Recovery**
+<div style="margin-bottom:2rem;">
 <video controls style="width:100%; display:block; margin:0 auto;">
   <source src="{{ '/assets/videos/fall_recovery_web.mp4' | relative_url }}" type="video/mp4">
 </video>
+</div>
 
+--- -->
 
-## Georgia Tech Solar Racing
-### Composite Material Testing
-<img 
-  src="{{ '/assets/images/image5.jpg' | relative_url }}"
-  alt="Turning markers"
-  style="width:100%; display:block; margin:0 auto;">
-
-### Mechanical Design
+# **Georgia Tech Solar Racing**
 
 <img 
-  src="{{ '/assets/images/image9.png' | relative_url }}"
-  alt="Turning markers"
-  style="width:100%; display:block; margin:0 auto;">
+  src="{{ '/assets/images/image6.png' | relative_url }}"
+  alt="GT Solar Rendering"
+  style="width:70%; display:block; margin:0.5rem auto;">
+
+<!-- TWO-COLUMN LAYOUT FOR THE CARDS -->
+<div style="
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  margin-top:1.5rem;
+">
+
+  <!-- CARD LEFT -->
+  <div style="flex:1; min-width:280px;">
+    <h3 class="feature__title">Composite Material Testing</h3>
+    <img 
+      src="{{ '/assets/images/image5.jpg' | relative_url }}"
+      style="width:100%; border-radius:6px; margin:0.5rem 0;"
+    >
+    <p>
+      Hands-on testing of composite layups for structural performance 
+      and manufacturability in solar vehicle frames.
+    </p>
+  </div>
+
+  <!-- CARD RIGHT -->
+  <div style="flex:1; min-width:700px;">
+    <h3 class="feature__title">Mechanical Design</h3>
+    <img 
+      src="{{ '/assets/images/image9.png' | relative_url }}"
+      style="width:100%; border-radius:6px; margin:0.5rem 0;"
+    >
+    <p>
+      CAD design and FEA modeling of key vehicle components for weight, 
+      stiffness, and manufacturability.
+    </p>
+  </div>
+
+</div>
 
 
+</div>
 
-[Download CV (PDF)]({{ '/assets/Esteban_Flores_CV.pdf' | relative_url }}) ·
-[Projects]({{ '/projects/' | relative_url }})
+---
+
+<div style="text-align:center; margin-top:3rem;">
+  <a href="{{ '/assets/Esteban_Flores_CV.pdf' | relative_url }}" class="btn btn--primary btn--large">Download CV (PDF)</a>
+  &nbsp;&nbsp;
+  <a href="{{ '/projects/' | relative_url }}" class="btn btn--light-outline btn--large">Projects</a>
+</div>

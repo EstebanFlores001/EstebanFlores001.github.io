@@ -26,25 +26,24 @@ author_profile: false
   </div>
   <!-- RIGHT COLUMN — TEXT -->
   <div style="flex:1; min-width:300px;">
-    <h2 style="margin-top:0;">Robotics at ETH Zurich</h2>
+    <h2 style="margin-top:0;">Robotics Student at ETH Zurich</h2>
     <p>
       Robotics MS student at ETH Zurich focused on autonomy, simulation, and 
       sensing for safer and more efficient real-world systems.
     </p>
     <p>
-      Former Ground Control Robotics intern (simulation, sensing, autonomy) and 
-      GT CRAB Lab researcher (experimental locomotion, first author).
+      Former GT CRAB Lab researcher(locomotion, autonomy) and Zipline Intern(test, state estimation) looking for internship and research opportunities.   
     </p>
     <p>
-      <strong>Logistics:</strong> U.S. Citizen · Full-time availability 2026<br>
-      <strong>Interests:</strong> robotics, validation, reliability, field testing
+      <strong>Nationality:</strong> U.S. Citizen <br>
+      <strong>Interests:</strong> Autonomy, Simulation, State Estimation, Planning
     </p>
   </div>
 </div>
 ---
 
-## Undergarduate Research
-### Autonomy and Locomotion of multilegged-robots
+## Autonomy and Locomotion of multilegged-robots
+Undergraduate research in the Complex Rheology and Biomechanics Lab at the Georgia Institute of Technology focused on sensing and control of centipede-like robots 
  <video controls style="width:90%; display:block; margin:1rem auto;">
     <source src="{{ '/assets/videos/no_fall_recovery_web_cfr.mp4' | relative_url }}" type="video/mp4">
   </video>
@@ -97,13 +96,6 @@ author_profile: false
     Built a 5-segment MuJoCo model of a multilegged undulatory robot, including XML model 
     definition, tuning, and Python controllers that reproduce physical gaits for sim-to-real studies.
   </p>
-
-  <!-- Optional placeholder video (sometimes buggy, left commented) -->
-  <!--
-  <video controls style="width:100%; display:block; margin:0.5rem auto;">
-    <source src="{{ '/assets/videos/no_fall_recovery_web_cfr.mp4' | relative_url }}" type="video/mp4">
-  </video>
-  -->
 </div>
 </div>
 <!-- # **Autonomy Experiments** -->
@@ -125,7 +117,7 @@ author_profile: false
 --- -->
 
 # **Georgia Tech Solar Racing**
-
+Mechanical lead of new multi-occupant, semi-monocoque fully solar powered vehicle designed to race in the American Solar Challenge and Formula Sun Grand Prix. 
 <img 
   src="{{ '/assets/images/image6.png' | relative_url }}"
   alt="GT Solar Rendering"
@@ -147,7 +139,7 @@ author_profile: false
       style="width:100%; border-radius:6px; margin:0.5rem 0;"
     >
     <p>
-      Hands-on testing of composite layups for structural performance 
+      Hands-on testing, analysis, and modelling of composite layups for structural performance 
       and manufacturability in solar vehicle frames.
     </p>
   </div>
@@ -160,12 +152,11 @@ author_profile: false
       style="width:100%; border-radius:6px; margin:0.5rem 0;"
     >
     <p>
-      CAD design and FEA modeling of key vehicle components for weight, 
-      stiffness, and manufacturability.
+      Design and structural FEA of key vehicle components for crash, performance, and weight optimization. 
     </p>
   </div>
 
-</div>
+<!-- </div> -->
 
 
 </div>
@@ -173,7 +164,7 @@ author_profile: false
 ---
 
 <div style="text-align:center; margin-top:3rem;">
-  <a href="{{ '/assets/Esteban_Flores_CV.pdf' | relative_url }}" class="btn btn--primary btn--large">Download CV (PDF)</a>
+  <a href="{{ '/assets/cv.pdf' | relative_url }}" class="btn btn--primary btn--large">Download CV (PDF)</a>
   &nbsp;&nbsp;
   <a href="{{ '/projects/' | relative_url }}" class="btn btn--light-outline btn--large">Projects</a>
 </div>

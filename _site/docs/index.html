@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Esteban Flores">
 <meta property="og:title" content="Esteban Flores">
-<meta property="og:url" content="/">
+<meta property="og:url" content="/docs/">
 
 
   <meta property="og:description" content="Robotics • Test • Prototyping">
@@ -35,20 +35,10 @@
 
 
 
-<link rel="canonical" href="/">
+<link rel="canonical" href="/docs/">
 
 
 
-
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-    "name": null,
-    "url": "/"
-}
-</script>
 
 
 
@@ -161,13 +151,13 @@
   </div>
   <!-- RIGHT COLUMN — TEXT -->
   <div style="flex:1; min-width:300px;">
-    <h2 style="margin-top:0;">Robotics Student at ETH Zurich</h2>
+    <h2 style="margin-top:0;">Robotics  Student at ETH Zurich</h2>
     <p>
-      Robotics MS student at ETH Zurich focused on autonomy, simulation, and 
-      sensing for safer and more efficient real-world systems.
+      Robotics MS student and former Zipline Intern focused on autonomy and   
+      sensing. 
     </p>
     <p>
-      Former GT CRAB Lab researcher(locomotion, autonomy) and Zipline Intern(test, state estimation) looking for internship and research opportunities.   
+      A few highlights from my student research and courses that I can share publicly   
     </p>
     <p>
       <strong>Nationality:</strong> U.S. Citizen <br />
@@ -177,6 +167,50 @@
 </div>
 <hr />
 
+<h2 id="optical-flow-based-velocity-estimation-for-aerial-robots">Optical Flow based Velocity Estimation for Aerial Robots</h2>
+<p>Graduate research at the Autonomous Systems Lab on high frequency kalman filtering using computer vision</p>
+<div class="feature__wrapper">
+<!-- CARD 1: Tactile Sensing -->
+<div class="feature__item" style="display:flex; flex-direction:column;">
+  <h3 class="feature__title">Kalman Filtering</h3>
+
+    <img src="/assets/images/flow_residuals_vs_time.jpg" style="grid-row: 1 / span 2; width:100%; border-radius:8px; object-fit:cover;" />
+
+  <p style="margin-top:auto;">
+    Integrated monocular vision and imu measusrements in an unscented kalman filter for low-level ego motion estimation. (Data shown in plot is simulated for demonstration purposes).
+  </p>
+</div>
+
+<!-- CARD 2: IMU Fall Recovery -->
+<div class="feature__item" style="display:flex; flex-direction:column;">
+  <h3 class="feature__title">3D Homography</h3>
+
+  <div style="flex:0 0 auto;">
+    <video controls="" style="width:100%; display:block; margin:0.5rem auto;">
+      <source src="/assets/videos/rotation_transation_external_view.mov" type="video/mp4" />
+    </video>
+  </div>
+
+  <p style="margin-top:auto;">
+   Camera linear and angular velocity constraints are based on 3D homography. Ground truth measurements are reconstructed from global bundal adjustement using reprojective geometry. 
+  </p>
+</div>
+
+<!-- CARD 3: Simulation & Design -->
+<div class="feature__item" style="display:flex; flex-direction:column;">
+  <h3 class="feature__title">Dense Optical Flow</h3>
+
+  <div style="flex:0 0 auto;">
+    <video controls="" style="width:100%; display:block; margin:0.5rem auto;">
+      <source src="/assets/videos/flow_video_trimmed.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <p style="margin-top:auto;">
+  Used classical-feature detector based flow such as Shi-Thomasi as well as dense, deep-learning based flow networks such as RAFT to obtain flow vectors.
+  </p>
+</div>
+</div>
 <h2 id="autonomy-and-locomotion-of-multilegged-robots">Autonomy and Locomotion of multilegged-robots</h2>
 <p>Undergraduate research in the Complex Rheology and Biomechanics Lab at the Georgia Institute of Technology focused on sensing and control of centipede-like robots</p>
 <video controls="" style="width:90%; display:block; margin:1rem auto;">
@@ -320,7 +354,7 @@
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2025 <a href="">Esteban Flores</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="">Esteban Flores</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
